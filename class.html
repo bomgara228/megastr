@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*1
+        let bom = prompt('Введите строку');
+        let pon = 0;
+        for (let i = 0; i <= bom.length; i++) {
+            if (bom[i] == ' ') {
+                pon++;
+            }
+        }
+        console.log(pon);*/
+
+        /*2
+        let bom = prompt('Введите 1 символ');
+        if ( ('a' <= bom) && (bom <= 'z')) {
+            console.log('Буква латинского алфавита');
+        } else if ( ('0' <= bom) && (bom <= '9')) {
+            console.log('Цифра');
+        } else {
+            console.log('Какой-то символ');
+        }*/
+
+        /*3
+        let bom = prompt('Введите текст');
+        let bomb = bom.toLowerCase();
+        let da = '';
+        if ( ('а' <= bomb) && (bomb <= 'я')) {
+            for (let i = 0; i <= bomb.length; i++){
+                if ( (bomb[i] == 'а' ) || (bomb[i] == 'у' ) || (bomb[i] == 'о' ) || (bomb[i] == 'и' ) || (bomb[i] == 'е' ) || (bomb[i] == 'ё' ) || (bomb[i] == 'ю' ) || (bomb[i] == 'я' ) || (bomb[i] == 'э' ) || (bomb[i] == 'ы' ) ){
+                    da = da + bomb[i];
+                }
+            }
+        }
+        console.log(da);*/
+
+        /*4
+        let bom = prompt('Введите строку символов');
+        bom = bom.trim();
+        bom = bom.split('');
+        bom = bom.reverse();
+        console.log(bom.join(''));*/
+
+        /*5*/
+        let mas = prompt('Введите массив строк');
+        mas = mas.split(' ');
+        for (let i = 0; i <= mas.length; i++) {
+            if (('0' <= mas[i][0]) && (mas[i][0] <= '9')) {
+                mas.splice(i, 1);
+            }
+        }
+        console.log(mas);
+
+        /*6
+        let mas = prompt('Введите предложение');
+        mas = mas.split(' ')
+        let s = 0;
+        for (let i = 1; i<= mas.length; i++) {
+            s++;
+        }
+        console.log('В предложении ' + s + ' слова');*/
+
+    </script>
+</body>
+</html>

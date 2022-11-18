@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*найти букву в строке*/
+        let str1 = 'hello world!';
+        console.log(str1.indexOf('w'));
+
+        /*найти букву в строке с ответом бул*/
+        let str2 = 'hello world!';
+        console.log(str2.includes('w'));
+
+        /*создать копию(можно просто str3 = str, но так тоже сойдет*/
+        let str3 = 'hello world!';
+        console.log(str3.slice(-4));
+
+        /*разбить строку и закинуть в массив*/
+        let str4 = 'hello world!';
+        console.log(str4.split(''));
+
+        /*сделать из массива строку*/
+        let str5 = 'hello world!';
+        let str6 = str5.split('');
+        console.log(str6);
+        console.log(str6.join(''));
+
+        /*стоит ли первым в строке(или гдето в другом месте) символ, возвращает бул*/
+        let str7 = 'hello world!';
+        console.log(str7.startsWith('w', 6 ));
+
+        /*убрать пробел в начале*/
+        let str8 = '                    hello world!  ';
+        console.log(str8.trim().length);
+
+        /*сделать все маленьким*/
+        let str9 = 'HELLO world!';
+        console.log(str9.toLowerCase());
+        
+        /*посмотреть номер символа*/
+        console.log('a'.charCodeAt());
+        let bok = 'r';
+        if (('a' <= bok) && ( bok <= 'z')) {
+            console.log(true);
+        } else {
+            console.log(false)
+        }
+
+        /*заменить*/
+        let str10 = 'hello world!';
+        console.log(str10.replace('h', '123'));
+
+        // удалить
+        let arr = [1,2,3,4,5];
+        delete arr[2];
+        console.log(arr);
+    </script>
+</body>
+</html>
